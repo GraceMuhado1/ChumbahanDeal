@@ -1,4 +1,4 @@
-let cards = document.querySelectorAll('.memory-card');
+let cards = document.querySelectorAll('.chummy-card');
 
 let hasFlippedCard = false;
 let lockBoard = false;
@@ -62,8 +62,8 @@ function resetBoard() {
 cards.forEach(card => card.addEventListener('click', flipCard));
 $(document).ready(function () {
   $("#aurelia").click(function () {
-    alert("success");
-    $('.card').toggleClass('flipped');
+    // alert("success");
+    // $('.card').toggleClass('flipped');
     this.increase()
 
   });
@@ -72,8 +72,8 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   $(".vue").click(function () {
-    alert("failed");
-    $('.card').toggleClass('flipped');
+    // alert("failed");
+    // $('.card').toggleClass('flipped');
 
     this.decrease();
   });
