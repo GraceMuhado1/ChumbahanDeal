@@ -124,3 +124,86 @@ background: red;
   -o-transform: rotateY( 180deg );
   transform: rotateY( 180deg );
 }
+
+.numbers{
+  position: absolute;
+  margin-top: 61px;
+  z-index: 5;
+  width: 32px;
+}
+
+.numbers2{
+  position: absolute;
+  margin-top: 144px;
+  z-index: 5;
+  width: 32px;
+
+}
+
+.numbers3{
+  position: absolute;
+  margin-top: 223px;
+  z-index: 5;
+  width: 36px;
+
+}
+
+.numbers4{
+  position: absolute;
+  margin-top: 304px;
+  z-index: 5;
+  width: 36px;
+
+}
+.numbers5{
+    position: absolute;
+    margin-top: 385px;
+    z-index: 5;
+    width: 36px;
+
+}
+
+.numbers6{
+  position: absolute;
+  margin-top: 465px;
+  z-index: 5;
+  width: 36px;
+
+}
+
+
+
+
+.nav {
+  /* background-color: yellow;  */
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  margin-top: 40px;
+  z-index: 4;
+}
+
+.nav li {
+  display: inline-block;
+  
+  padding: 20px;
+  height: 0px;
+  margin: 2px 35px;
+}
+
+.nav li img{
+  width: 28px;
+}
+
+@media (min-width: 1920px) {
+
+  .memory-game{
+    margin-top: -111px;
+  }
+
+  .modal{
+    margin-top: 100px;
+  }
+ }

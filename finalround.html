@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
 
-  <title>Memory Game</title>
+  <title>Chumbahan</title>
 
 
   <meta charset="utf-8">
@@ -22,129 +23,178 @@
 
   <script src="http://code.jquery.com/jquery-1.7.2.js"></script>
 
+  <script src="https://code.jquery.com/jquery-1.8.3.min.js"
+    integrity="sha256-YcbK69I5IXQftf/mYD8WY0/KmEDCv1asggHpJk1trM8=" crossorigin="anonymous"></script>
+
   <link rel="stylesheet" href="finalround.css">
 </head>
+
 <body>
 
-  
-        <div class="container">
-                  <div class="row" style = " margin-top: 18px;">
-                        <div class="col">
-                                <img src="assets/chumbahan.png"   />
-                        </div>
-                        <div class="col">
-                                <img src="assets/sa.png" class = "sa-title"  />
-                        </div>
-                        <div class="col">
-                                <img src="assets/chumbayan.png" />
-                        </div>
-                      </div>
 
 
-                      <div class="container">
-                        <div class="row justify-content-md-center" style = "margin-top: -143px;">
-                          <div class="col col-lg-2">
-                            <img src="assets/finalstage/1.png"  style = "float:right"/>
-                          </div>
-                          <div class="col-12 col-md-auto">
-                            <img src="assets/finalstage/2.png" />
-                          </div>
-                          <div class="col col-lg-2">
-                            <img src="assets/finalstage/3.png"style = "float:left" />
-                          </div>
-                        </div>
-
-
-                        <div class="row justify-content-around" style = "margin-top: -233px; ;">
-                          <div class="col-4">
-                            <img src="assets/finalstage/4.png" style = " margin-left: 93px;"  />
-                          </div>
-                          <div class="col-4">
-                            <img src="assets/finalstage/8.png" style = " float: right;
-                            margin-right: 93px;"  />
-                          </div>
-                        </div>
-
-                        <div class="row justify-content-md-center" style = "margin-top: -224px;">
-                          <div class="col col-lg-2">
-                            <img src="assets/finalstage/5.png"  />
-                          </div>
-                          <div class="col-12 col-md-auto">
-                            <img src="assets/finalstage/6.png" />
-                          </div>
-                          <div class="col col-lg-2">
-                            <img src="assets/finalstage/7.png" style = "float:right" />
-                          </div>
-                        </div>
-
-                        <div class="row justify-content-center" style = "margin-top: -182px;">
-                          <div class="col-4">
-                            <img src="assets/finalstage/9.png" style = "float:right;margin-right: 9px"  />
-                          </div>
-                          <div class="col-4">
-                            <img src="assets/finalstage/10.png"  style = "  margin-left: 24px;" />
-                          </div>
-                        </div>
-                       
-                      </div>
-                       
-
-                </div>
-    
-             
-         
-
-
-      
-      <!--Modal: modalConfirmDelete-->
-      <div class="modal fade" id="modalConfirmDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog modal-sm modal-notify modal-danger text-center" role="document">
-          <!--Content-->
-          <div class="text-center">
-            <!--Header-->
-            <img  src="assets/cases/player_day.png" alt="Vue"  style = "    width: 400px;
-            margin-top: 112px;"  />
-      
-            
-          </div>
-          <!--/.Content-->
-        </div>
+  <div class="container">
+    <div class="row" style=" margin-top: 18px;">
+      <div class="col">
+        <img src="assets/chumbahan.png" />
       </div>
-   
-
-<!-- Button trigger modal-->
-
-
-<!--Modal: modalPush-->
-<div class="modal fade" id="modalPush" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-notify modal-info" role="document">
-    <!--Content-->
-    <div class=" text-center">
-            <img  src="assets/cases/sorry.png" alt="Vue"  style = "    width: 400px;
-            margin-top: 112px;"  />
-     
-     
+      <div class="col">
+        <img src="assets/sa.png" class="sa-title" />
+      </div>
+      <div class="col">
+        <img src="assets/chumbayan.png" />
+      </div>
     </div>
-    <!--/.Content-->
+
+    <div class="container">
+      <div class="memory-game">
+        <div class="case_numbers1">
+          <img src="assets/finalstage/1.png" class="numbers" style="margin-left:63px;width:10px" />
+          <img src="assets/finalstage/2.png" class="numbers" style=" margin-left: 230px;" />
+          <img src="assets/finalstage/3.png" class="numbers" style="  margin-left: 394px;" />
+          <img src="assets/finalstage/4.png" class="numbers" style="margin-left: 557px;" />
+
+
+        </div>
+        <div class="case_numbers1">
+          <img src="assets/finalstage/5.png" class="numbers2" style="margin-left:60px;" />
+          <img src="assets/finalstage/6.png" class="numbers2" style=" margin-left: 226px;" />
+          <img src="assets/finalstage/7.png" class="numbers2" style=" margin-left: 392px; margin-top: 192px;" />
+          <img src="assets/finalstage/8.png" class="numbers2" style="margin-left: 557px;" />
+
+
+        </div>
+        <div class="case_numbers1">
+          <img src="assets/finalstage/9.png" class="numbers3" style="margin-left:134px;" />
+          <img src="assets/finalstage/10.png" class="numbers3"
+            style=" margin-left: 472px;width: 36px; margin-top: 293px;" />
+
+        </div>
+
+        <div class="stand">
+          <img src="assets/finalstage/stand.png" class="numbers" style="margin-left:63px;" />
+          <img src="assets/finalstage/stand.png" class="numbers" style=" margin-left: 230px;" />
+          <img src="assets/finalstage/stand.png" class="numbers" style="  margin-left: 394px;" />
+          <img src="assets/finalstage/stand.png" class="numbers" style="margin-left: 557px;" />
+
+
+        </div>
+        <div class="stand">
+          <img src="assets/finalstage/stand.png" class="numbers2" style="margin-left:60px;margin-top: 235px;" />
+          <img src="assets/finalstage/stand.png" class="numbers2" style=" margin-left: 226px;margin-top: 257px;" />
+          <img src="assets/finalstage/stand.png" class="numbers2" style=" margin-left: 392px;margin-top: 257px;" />
+          <img src="assets/finalstage/stand.png" class="numbers2" style="margin-left: 557px;margin-top: 235px;" />
+
+
+        </div>
+        <div class="stand">
+          <img src="assets/finalstage/stand.png" class="numbers3" style="margin-left:134px;margin-top: 332px;" />
+          <img src="assets/finalstage/stand.png" class="numbers3" style=" margin-left: 472px; margin-top: 332px;" />
+
+        </div>
+
+
+
+        <div class="memory-card card chummy-card" data-framework="aurelia" id="aurelia">
+
+          <img class="front-face " src="assets/cases/player_day.png" alt="Vue" />
+          <img class="back-face " src="assets/finalstage/case_final.png" alt="JS Badge" data-toggle="modal"data-target="#modalConfirmDelete" />
+        </div>
+
+        <div class="memory-card card chummy-card" data-framework="aurelia">
+          <img class="front-face " src="assets/cases/sorry.png" alt="Vue" />
+          <img class="back-face  " src="assets/finalstage/case_final.png" alt="JS Badge" data-toggle="modal"
+            data-target="#modalPush" />
+        </div>
+
+        <div class="memory-card card chummy-card " data-framework="vue">
+          <img class="front-face" src="assets/cases/sorry.png" alt="Vue" />
+
+          <img class="back-face " src="assets/finalstage/case_final.png" alt="JS Badge" data-toggle="modal"
+            data-target="#modalPush" />
+        </div>
+
+        <div class="memory-card card chummy-card " data-framework="vue">
+          <img class="front-face" src="assets/cases/sorry.png" alt="Vue" />
+          <img class="back-face" src="assets/finalstage/case_final.png" alt="JS Badge" data-toggle="modal"
+            data-target="#modalPush" />
+        </div>
+        <div class="memory-card card chummy-card" data-framework="vue">
+          <img class="front-face " src="assets/cases/sorry.png" alt="Vue" />
+          <img class="back-face " src="assets/finalstage/case_final.png" alt="JS Badge" data-toggle="modal"
+            data-target="#modalPush" />
+        </div>
+
+
+        <div class="memory-card card chummy-card " data-framework="vue">
+          <img class="front-face" src="assets/cases/sorry.png" alt="Vue" />
+          <img class="back-face  " src="assets/finalstage/case_final.png" alt="JS Badge" data-toggle="modal"
+            data-target="#modalPush" />
+        </div>
+        <div class="memory-card card chummy-card" data-framework="vue">
+          <img class="front-face" src="assets/cases/sorry.png" alt="Vue" />
+          <img class="back-face  " src="assets/finalstage/case_final.png" alt="JS Badge" data-toggle="modal"
+            data-target="#modalPush" />
+        </div>
+        <div class="memory-card card chummy-card " data-framework="vue">
+          <img class="front-face" src="assets/cases/sorry.png" alt="Vue" />
+          <img class="back-face  " src="assets/finalstage/case_final.png" alt="JS Badge" data-toggle="modal"
+            data-target="#modalPush" />
+        </div>
+
+        <div class="memory-card card chummy-card " data-framework="vue">
+          <img class="front-face" src="assets/cases/sorry.png" alt="Vue" />
+          <img class="back-face  chums-card" src="assets/finalstage/case_final.png" alt="JS Badge" data-toggle="modal"
+            data-target="#modalPush" />
+        </div>
+
+        <div class="memory-card card chummy-card " data-framework="vue">
+          <img class="front-face" src="assets/cases/sorry.png" alt="Vue" />
+          <img class="back-face  chums-card" src="assets/finalstage/case_final.png" alt="JS Badge" data-toggle="modal"
+            data-target="#modalPush" />
+        </div>
+
+      </div>
+    </div>
   </div>
-</div>
-<!--Modal: modalPush-->
 
 
-  <script src="scripts.js"></script>
 
-  <!--<div class="card memory-card" onclick="flip()" data-framework="aurelia">
-    <div class="front"> <img  src="../img/js-badge.svg" alt="JS Badge" /> 
-     </div>
-    <div class="back"><img  src="../img/aurelia.svg" alt="Aurelia" /> </div>
+
+
+
+
+
+  <div class="modal fade" id="modalConfirmDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-notify modal-danger text-center" role="document">
+      <!--Content-->
+      <div class="text-center">
+        <!--Header-->
+        <img src="assets/cases/player_day.png" alt="Vue" style=" width: 400px;margin-top: 112px;" />
+        <img src="assets/fireworks.gif" style="position: absolute;top: 175px;left: 235px;" />
+        <img src="assets/fireworks.gif" style="position: absolute;top: 175px;right: 235px;" />
+      </div>
+    </div>
   </div>
-  <div class="card memory-card" onclick="flip()" data-framework="backbone" style = "position: relative;
-  top: 300px;" >
-    <div class="front"><img  src="../img/js-badge.svg" alt="Backbone" /></div>
-    <div class="back"><img  src="../img/backbone.svg" alt="Backbone" /></div>
-  </div>-->
+
+
+  <div class="modal fade" id="modalPush" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-notify modal-info" role="document">
+      <!--Content-->
+      <div class=" text-center">
+        <img src="assets/cases/sorry.png" alt="Vue" style="    width: 400px;
+            margin-top: 112px;" />
+      </div>
+
+    </div>
+  </div>
+ 
+
+
+  <script src="finalround.js"></script>
+
 
   <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
   <!-- Bootstrap tooltips -->
@@ -155,4 +205,5 @@
   <script type="text/javascript" src="js/mdb.min.js"></script>
 
 </body>
+
 </html>

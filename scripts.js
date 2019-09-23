@@ -23,11 +23,6 @@ function flipCard() {
   checkForMatch();
 }
 
-function checkForMatch() {
-  //let isMatch = firstCard.dataset.framework === secondCard.dataset.framework;
-
-  //isMatch ? disableCards() : unflipCards();
-}
 
 function disableCards() {
   chumy.removeEventListener('click', flipCard);
@@ -54,34 +49,33 @@ function resetBoard() {
 
 (function shuffle() {
   cards.forEach(card => {
-    let randomPos = Math.floor(Math.random() * 12);
+    let randomPos = Math.floor(Math.random() * 30);
     card.style.order = randomPos;
+    console.log(card)
+
+
+    if ($("#aurelia").click(function () {
+
+      console.log(style.order)
+
+    }));
+
+
   });
+
 })();
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 $(document).ready(function () {
-  $("#aurelia").click(function () {
-    // alert("success");
-    // $('.card').toggleClass('flipped');
-    this.increase()
-
-  });
+  ;
 });
 
 
 $(document).ready(function () {
   $(".vue").click(function () {
-    // alert("failed");
-    // $('.card').toggleClass('flipped');
 
-    this.decrease();
   });
 });
-
-
-
-//minus points
 
 
 
