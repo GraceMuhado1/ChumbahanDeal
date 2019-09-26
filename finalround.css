@@ -17,6 +17,7 @@
     /* background-size: cover; */
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    background-color: #480707;
     
   }
   
@@ -138,7 +139,7 @@
     -moz-transform: rotateY( 180deg );
     -o-transform: rotateY( 180deg );
     transform: rotateY( 180deg );
-  }
+  } 
   .card.flipped {
     -webkit-transform: rotateY( 180deg );
     -moz-transform: rotateY( 180deg );
@@ -157,7 +158,34 @@
     z-index:0;
   }
   
+  .upload-btn{
+    color: white;
+    width: 177px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 19px;
+  }
 
+
+
+  .prizes-con{
+    top: 372px;
+    position: relative;
+  }
+  .row{
+    margin: 5px;
+  }
+
+  .pop_up{
+    position: absolute;
+    top: 203px;
+    left: 92px;
+    width: 221px;
+  }
+
+  .prizes{
+    z-index: 3;width: 101px;margin: 0px 20px;
+  }
   @media (min-width: 1920px) {
 
     .memory-game{

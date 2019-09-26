@@ -197,7 +197,7 @@ background: red;
   width: 28px;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1920px) { 
 
   .memory-game{
     margin-top: -111px;
@@ -206,4 +206,4 @@ background: red;
   .modal{
     margin-top: 100px;
   }
- }
+ }  

@@ -27,7 +27,17 @@
     integrity="sha256-YcbK69I5IXQftf/mYD8WY0/KmEDCv1asggHpJk1trM8=" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="finalround.css">
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+
+    
+     
+    <script src="https://code.jquery.com/jquery-1.8.3.min.js"
+    integrity="sha256-YcbK69I5IXQftf/mYD8WY0/KmEDCv1asggHpJk1trM8=" crossorigin="anonymous"></script>
+
 </head>
+
 
 <body>
 
@@ -90,93 +100,251 @@
         <div class="stand">
           <img src="assets/finalstage/stand.png" class="numbers3" style="margin-left:134px;margin-top: 332px;" />
           <img src="assets/finalstage/stand.png" class="numbers3" style=" margin-left: 472px; margin-top: 332px;" />
-
+ 
         </div>
+ 
 
 
-
-        <div class="memory-card card chummy-card" data-framework="aurelia" id="aurelia">
-
-          <img class="front-face " src="assets/cases/player_day.png" alt="Vue" />
+        <div class="memory-card card chummy-card" data-framework="aurelia" id="box1">
+          <img  class="front-face myImg prizes" src="#">
+          <img  class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
           <img class="back-face " src="assets/finalstage/case_final.png" alt="JS Badge" data-toggle="modal"data-target="#modalConfirmDelete" />
         </div>
 
         <div class="memory-card card chummy-card" data-framework="aurelia">
-          <img class="front-face " src="assets/cases/sorry.png" alt="Vue" />
-          <img class="back-face  " src="assets/finalstage/case_final.png" alt="JS Badge" data-toggle="modal"
-            data-target="#modalPush" />
+          <img class="front-face myImg2 prizes" src="#" alt="Vue" />
+          <img  class="front-face output_image2" src="assets/finalstage/empty_case.png" alt="your image">
+          <img class="back-face " src="assets/finalstage/case_final.png" alt="JS Badge" data-toggle="modal"data-target="#modalConfirmDelete1" />
         </div>
 
         <div class="memory-card card chummy-card " data-framework="vue">
-          <img class="front-face" src="assets/cases/sorry.png" alt="Vue" />
-
+        
+          <img  class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
           <img class="back-face " src="assets/finalstage/case_final.png" alt="JS Badge" data-toggle="modal"
             data-target="#modalPush" />
         </div>
 
         <div class="memory-card card chummy-card " data-framework="vue">
-          <img class="front-face" src="assets/cases/sorry.png" alt="Vue" />
+        
+            <img  class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
           <img class="back-face" src="assets/finalstage/case_final.png" alt="JS Badge" data-toggle="modal"
             data-target="#modalPush" />
         </div>
         <div class="memory-card card chummy-card" data-framework="vue">
-          <img class="front-face " src="assets/cases/sorry.png" alt="Vue" />
+            <img  class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
           <img class="back-face " src="assets/finalstage/case_final.png" alt="JS Badge" data-toggle="modal"
             data-target="#modalPush" />
         </div>
 
 
         <div class="memory-card card chummy-card " data-framework="vue">
-          <img class="front-face" src="assets/cases/sorry.png" alt="Vue" />
+            <img  class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
           <img class="back-face  " src="assets/finalstage/case_final.png" alt="JS Badge" data-toggle="modal"
             data-target="#modalPush" />
         </div>
         <div class="memory-card card chummy-card" data-framework="vue">
-          <img class="front-face" src="assets/cases/sorry.png" alt="Vue" />
+            <img  class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
           <img class="back-face  " src="assets/finalstage/case_final.png" alt="JS Badge" data-toggle="modal"
             data-target="#modalPush" />
         </div>
         <div class="memory-card card chummy-card " data-framework="vue">
-          <img class="front-face" src="assets/cases/sorry.png" alt="Vue" />
+            <img  class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
           <img class="back-face  " src="assets/finalstage/case_final.png" alt="JS Badge" data-toggle="modal"
             data-target="#modalPush" />
         </div>
 
         <div class="memory-card card chummy-card " data-framework="vue">
-          <img class="front-face" src="assets/cases/sorry.png" alt="Vue" />
+            <img  class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
           <img class="back-face  chums-card" src="assets/finalstage/case_final.png" alt="JS Badge" data-toggle="modal"
             data-target="#modalPush" />
         </div>
 
         <div class="memory-card card chummy-card " data-framework="vue">
-          <img class="front-face" src="assets/cases/sorry.png" alt="Vue" />
+            <img  class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
           <img class="back-face  chums-card" src="assets/finalstage/case_final.png" alt="JS Badge" data-toggle="modal"
             data-target="#modalPush" />
         </div>
 
       </div>
     </div>
+ 
+
+ 
+    <div class="container prizes-con">
+        <div class="row" >
+            <div class="col-6"> 
+                <div class="row justify-content-center">
+                    <div class="col-4">
+                        <img class="" src="assets/numbers/1.png" alt="Vue" style = "float:right" />
+                    </div>
+                 <div class="col-4">    
+                   
+                    <input type='file' class = "upload_case1" />
+
+                  <!-- <label  type="file"  class="btn danger-color-dark btn-rounded upload-btn upload_case1" style = "color:white">
+                  Upload Image <input type="file" style="display: none;" class = "upload_case1">
+                </label>   -->
+                    </div>
+                  </div>
+              
+              </div>
+            <div class="col-6"> 
+              
+                <div class="row justify-content-center">
+                <div class="col-4">
+                    <img class="" src="assets/numbers/6.png" alt="Vue" style = "float:right" />
+                </div>
+             <div class="col-4">  
+               
+                <input type='file' class = "upload_case2" />
+              <!-- <label type="file"  class="btn danger-color-dark btn-rounded upload-btn upload_case2" style = "color:white">
+              Upload Image <input type="file" style="display: none;" class = "upload_case2"> -->
+            </label>  
+                </div>
+              </div>
+        </div>
   </div>
 
+  <div class="row" >
+      <div class="col-6"> 
+          <div class="row justify-content-center">
+              <div class="col-4">
+                  <img class="" src="assets/numbers/2.png" alt="Vue" style = "float:right" />
+              </div>
+           <div class="col-4">     
+            <label class="btn danger-color-dark btn-rounded upload-btn" style = "color:white">
+            Upload Image <input type="file" style="display: none;">
+          </label>  
+              </div>
+            </div>
+        
+        </div>
+      <div class="col-6"> 
+        
+          <div class="row justify-content-center">
+          <div class="col-4">
+              <img class="" src="assets/numbers/7.png" alt="Vue" style = "float:right" />
+          </div>
+       <div class="col-4">     
+        <label class="btn danger-color-dark btn-rounded upload-btn" style = "color:white">
+        Upload Image <input type="file" style="display: none;">
+      </label>  
+          </div>
+        </div>
+  </div>
+</div>
 
 
+<div class="row" >
+    <div class="col-6"> 
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <img class="" src="assets/numbers/3.png" alt="Vue" style = "float:right" />
+            </div>
+         <div class="col-4">     
+          <label class="btn danger-color-dark btn-rounded upload-btn" style = "color:white">
+          Upload Image <input type="file" style="display: none;">
+        </label>  
+            </div>
+          </div>
+      
+      </div>
+    <div class="col-6"> 
+      
+        <div class="row justify-content-center">
+        <div class="col-4">
+            <img class="" src="assets/numbers/8.png" alt="Vue" style = "float:right" />
+        </div>
+     <div class="col-4">     
+      <label class="btn danger-color-dark btn-rounded upload-btn" style = "color:white">
+      Upload Image <input type="file" style="display: none;">
+    </label>  
+        </div>
+      </div>
+</div>
+</div>
 
 
+<div class="row" >
+    <div class="col-6"> 
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <img class="" src="assets/numbers/4.png" alt="Vue" style = "float:right" />
+            </div>
+         <div class="col-4">     
+          <label class="btn danger-color-dark btn-rounded upload-btn" style = "color:white">
+          Upload Image <input type="file" style="display: none;">
+        </label>  
+            </div>
+          </div>
+      
+      </div>
+    <div class="col-6"> 
+      
+        <div class="row justify-content-center">
+        <div class="col-4">
+            <img class="" src="assets/numbers/9.png" alt="Vue" style = "float:right" />
+        </div>
+     <div class="col-4">     
+      <label class="btn danger-color-dark btn-rounded upload-btn" style = "color:white">
+      Upload Image <input type="file" style="display: none;">
+    </label>  
+        </div>
+      </div>
+</div>
+</div>
 
-
-
+<div class="row" >
+    <div class="col-6"> 
+        <div class="row justify-content-center">
+            <div class="col-4">
+                <img class="" src="assets/numbers/5.png" alt="Vue" style = "float:right" />
+            </div>
+         <div class="col-4">     
+          <label class="btn danger-color-dark btn-rounded upload-btn" style = "color:white">
+          Upload Image <input type="file" style="display: none;">
+        </label>  
+            </div>
+          </div>
+      
+      </div>
+    <div class="col-6"> 
+      
+        <div class="row justify-content-center">
+        <div class="col-4">
+            <img class="" src="assets/numbers/10.png" alt="Vue" style = "float:right" />
+        </div>
+     <div class="col-4">     
+      <label class="btn danger-color-dark btn-rounded upload-btn" style = "color:white">
+      Upload Image <input type="file" style="display: none;">
+    </label>  
+        </div>
+      </div>
+</div>
+</div>
+  
+ 
   <div class="modal fade" id="modalConfirmDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
     <div class="modal-dialog modal-sm modal-notify modal-danger text-center" role="document">
       <!--Content-->
-      <div class="text-center">
-        <!--Header-->
-        <img src="assets/cases/player_day.png" alt="Vue" style=" width: 400px;margin-top: 112px;" />
-        <img src="assets/fireworks.gif" style="position: absolute;top: 175px;left: 235px;" />
-        <img src="assets/fireworks.gif" style="position: absolute;top: 175px;right: 235px;" />
+      <div class="text-center">        
+        <img  class="" src="assets/finalstage/empty_case.png" alt="your image" style = "width: 400px; margin-top: 113px;" >
+        <img  class="pop_up" src="#">
       </div>
     </div>
   </div>
+
+  <div class="modal fade" id="modalConfirmDelete1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-notify modal-danger text-center" role="document">
+    <!--Content-->
+    <div class="text-center">        
+      <img  class="" src="assets/finalstage/empty_case.png" alt="your image" style = "width: 400px; margin-top: 113px;" >
+      <img  class="pop_up" src="#">
+    </div>
+  </div>
+</div>
 
 
   <div class="modal fade" id="modalPush" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -192,7 +360,7 @@
   </div>
  
 
-
+ 
   <script src="finalround.js"></script>
 
 
