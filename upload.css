@@ -1,0 +1,9 @@
+input[type="file"] {
+  /* display: none; */
+}
+
+.label-input{
+  border-radius: 21px;
+  width: 165px;
+
+}

@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.sa-title{
+  margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+
+
+body {
+  height: 100vh;
+  display: flex;
+  background-image: url("assets/background.png");
+  background-size:cover;
+
+  background-repeat: no-repeat;
+    background-color: #480707;
+  
+}
+
+
+.memory-game {
+  width: 62%;
+  height: 611px;
+  /* margin: auto; */
+  display: flex;
+  flex-wrap: wrap;
+  /* perspective: 1000px; */
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -213px;
+}
+
+.memory-card {
+  width: calc(20% - 10px);
+  height: calc(-0.667% - 10px);
+  margin: auto;
+
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform .5s;
+  box-shadow: 1px 1px 1px rgba(0,0,0,.3);
+}
+
+.case-number img{
+  display:inline-block;
+}
+
+.case-number h3{
+  display:inline-block;
+}
+.case-number{
+  position:absolute;
+  z-index:5
+}
+.memory-card:active {
+  transform: scale(0.97);
+  transition: transform .2s;
+}
+
+.memory-card.flip {
+  transform: rotateY(180deg);
+}
+
+.front-face,
+.back-face {
+  /* width: 100%;
+  height: 100%;
+  padding: 20px; */
+  position: absolute;
+  border-radius: 5px;
+  /* background: rgb(218, 41, 138); */
+  backface-visibility: hidden;
+  width: 128px;
+  height: 77px;
+}
+
+.front-face {
+  transform: rotateY(180deg);
+  
+}
+
+
+/* .container {
+  width: 200px;
+  height: 260px;
+  position: relative;
+  border: 1px solid #ccc;
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  -o-perspective: 800px;
+  perspective: 800px;
+} */
+
+.card div {
+  display: block;
+  height: 100%;
+  width: 100%;
+  line-height: 260px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 140px;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.card .front {
+background: red;
+}
+.card .back {
+  background: rgb(218, 41, 138);
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
+}
+.card.flipped {
+  -webkit-transform: rotateY( 180deg );
+  -moz-transform: rotateY( 180deg );
+  -o-transform: rotateY( 180deg );
+  transform: rotateY( 180deg );
+}
+
+.numbers{
+  position: absolute;
+    margin-top: 125px;
+    z-index: 5;
+    width: 111px;
+    height: 22px;
+    font-weight: bold;
+}
+
+.numbers2{
+ 
+  margin-top: 230px;
+  position: absolute;
+  
+    z-index: 5;
+    width: 111px;
+    height: 22px;
+    font-weight: bold;
+
+}
+
+.numbers3{
+  position: absolute;
+  margin-top: 332px;
+  z-index: 5;
+  width: 111px;
+  height: 22px;
+  font-weight: bold;
+
+}
+
+.numbers4{
+  position: absolute;
+  margin-top: 431px;
+  z-index: 5;
+  width: 111px;
+  height: 22px;
+  font-weight: bold;
+
+}
+.numbers5{
+  position: absolute;
+  margin-top: 534px;
+  z-index: 5;
+  width: 111px;
+  height: 22px;
+  font-weight: bold;
+}
+
+.numbers6{
+  position: absolute;
+  margin-top: 638px;
+  z-index: 5;
+  width: 111px;
+  height: 22px;
+  font-weight: bold;
+}
+
+
+
+
+.nav {
+  /* background-color: yellow;  */
+  list-style-type: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  margin-top: 40px;
+  z-index: 4;
+}
+
+.nav li {
+  display: inline-block;
+  
+  padding: 20px;
+  height: 0px;
+  margin: 2px 35px;
+}
+
+.nav li img{
+  width: 28px;
+}
+
+.show_list img{
+  /* margin-top: -210px;
+  width: 109px;
+  height: 69px; */
+
+  margin-top: -210px;
+    width: 136px;
+    height: 107px;
+}
+
+@media (min-width: 1920px) { 
+
+  .memory-game{
+    margin-top: -111px;
+  }
+
+  .modal{
+    margin-top: 100px;
+  }
+ }  

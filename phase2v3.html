@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Chumbahan</title>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design Bootstrap</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+  <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-1.7.2.js"></script>
+
+  <script src="https://code.jquery.com/jquery-1.8.3.min.js"
+    integrity="sha256-YcbK69I5IXQftf/mYD8WY0/KmEDCv1asggHpJk1trM8=" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="finalround.css">
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js"></script>
+
+
+
+  <script src="https://code.jquery.com/jquery-1.8.3.min.js"
+    integrity="sha256-YcbK69I5IXQftf/mYD8WY0/KmEDCv1asggHpJk1trM8=" crossorigin="anonymous"></script>
+
+
+      
+</head>
+<style>
+#myContainer {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  background: yellow;
+}
+#myAnimation {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: red;
+}
+
+.second-con{
+  position: relative;
+    top: -7px;
+}
+
+.title_col{
+  height: 391px;
+  
+}
+.this_title{
+  width:420px;
+}
+
+.chumba_btn{
+  background-image: url(assets/chumba2.png);
+  border: none;
+    color: white;
+    padding: 49px 91px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #CC0000;
+    background-repeat: no-repeat;
+}
+
+
+.uwina_btn{
+  background-image: url(assets/uwina2.png);
+  border: none;
+    color: white;
+    padding: 49px 91px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    background-color: #CC0000;
+    background-repeat: no-repeat;
+}
+
+@-webkit-keyframes blinker {
+  from {opacity: 1.0;}
+  to {opacity: 0.0;}
+}
+.demo{
+	text-decoration: blink;
+	-webkit-animation-name: blinker;
+	-webkit-animation-duration: 0.6s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-timing-function:ease-in-out;
+	-webkit-animation-direction: alternate;
+}
+
+
+@media (min-width: 1920px) { 
+
+  .title_col{
+  height: 284px;
+
+    top: 58px;
+}
+} 
+
+</style>
+
+<body>
+
+
+    <audio id="myAudio">
+        <source src="assets/ohno.mp3" type="audio/ogg">
+        <!-- <source src="horse.mp3" type="audio/mpeg"> -->
+        <!-- Your browser does not support the audio element. -->
+      </audio>
+
+  <div class="container">
+    <div class="row" style=" margin-top: 18px;">
+      <div class="col">
+        <!-- <img src="assets/chumbahan.png" /> -->
+      </div>
+      <div class="col title_col">
+        <img src="assets/title.png" class = "sa-title this_title"  />
+      </div>
+      <div class="col">
+        <!-- <img src="assets/chumbayan.png" /> -->
+      </div>
+    </div>
+
+    <div class="container firstcon">
+      <div class="memory-game">
+      
+
+        <div class="stand">
+          <img src="assets/finalstage/stand.png" class="numbers stand1" style="margin-left:63px;" />
+          <img src="assets/finalstage/stand.png" class="numbers stand2" style=" margin-left: 230px;" />
+          <img src="assets/finalstage/stand.png" class="numbers stand3" style="  margin-left: 394px;" />
+          <img src="assets/finalstage/stand.png" class="numbers stand4" style="margin-left: 557px;" />
+
+
+        </div>
+        <div class="stand">
+          <img src="assets/finalstage/stand.png" class="numbers2 stand5" style="margin-left:60px;margin-top: 235px;" />
+          <img src="assets/finalstage/stand.png" class="numbers2 stand6" style=" margin-left: 226px;margin-top: 257px;" />
+          <img src="assets/finalstage/stand.png" class="numbers2 stand7" style=" margin-left: 392px;margin-top: 257px;" />
+          <img src="assets/finalstage/stand.png" class="numbers2 stand8" style="margin-left: 557px;margin-top: 235px;" />
+
+
+        </div>
+        <div class="stand">
+          <img src="assets/finalstage/stand.png" class="numbers3 stand9" style="margin-left:134px;margin-top: 332px;" />
+          <img src="assets/finalstage/stand.png" class="numbers3 stand10" style=" margin-left: 472px; margin-top: 332px;" />
+
+        </div>
+
+      
+
+        <div class="memory-card card chummy-card " data-framework="aurelia" id="box1">
+          <img class="front-face myImg prizes" src="" id ="upload1">
+          <img class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
+          <img class="back-face backface201  " src="assets/finalstage/1.png" alt="JS Badge" data-toggle="modal"
+            data-target="#modalConfirmDelete1"  />
+        </div>
+
+        <div class="memory-card card chummy-card " data-framework="aurelia">
+          <img class="front-face myImg2 prizes" src="#" id ="upload2" />
+          <img class="front-face output_image2" src="assets/finalstage/empty_case.png" alt="your image">
+          <img class="back-face backface202" src="assets/finalstage/2.png" alt="JS Badge" data-toggle="modal"
+            data-target="#modalConfirmDelete2" />
+        </div>
+
+        <div class="memory-card card chummy-card " data-framework="vue">
+          <img class="front-face myImg3 prizes" src="#" id ="upload3">
+          <img class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
+          <img class="back-face backface203 " src="assets/finalstage/3.png" alt="JS Badge" data-toggle="modal"
+            data-target="#modalConfirmDelete3" />
+        </div>
+
+        <div class="memory-card card chummy-card " data-framework="vue">
+          <img class="front-face myImg4 prizes" src="#" id ="upload4">
+          <img class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
+          <img class="back-face backface204" src="assets/finalstage/4.png" data-toggle="modal" data-target="#modalConfirmDelete4" />
+        </div>
+
+        <div class="memory-card card chummy-card " data-framework="vue">
+
+          <img class="front-face myImg5 prizes" src="#" id ="upload5">
+          <img class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
+          <img class="back-face backface205" src="assets/finalstage/5.png" data-toggle="modal"
+            data-target="#modalConfirmDelete5" />
+        </div>
+
+
+        <div class="memory-card card chummy-card " data-framework="vue">
+          <img class="front-face myImg6 prizes" src="#" id ="upload6">
+          <img class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
+          <img class="back-face  backface206" src="assets/finalstage/6.png" data-toggle="modal"
+            data-target="#modalConfirmDelete6" />
+        </div>
+        <div class="memory-card card chummy-card " data-framework="vue">
+          <img class="front-face myImg7 prizes" src="#" id ="upload7">
+          <img class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
+          <img class="back-face backface207 " src="assets/finalstage/7.png" data-toggle="modal"
+            data-target="#modalConfirmDelete7" />
+        </div>
+        <div class="memory-card card chummy-card" data-framework="vue">
+          <img class="front-face myImg8 prizes" src="#" id ="upload8">
+          <img class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
+          <img class="back-face  backface208 " src="assets/finalstage/8.png" data-toggle="modal"
+            data-target="#modalConfirmDelete8" />
+        </div>
+
+        <div class="memory-card card chummy-card " data-framework="vue">
+          <img class="front-face myImg9 prizes" src="#" id ="upload9">
+          <img class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
+          <img class="back-face backface209  chums-card" src="assets/finalstage/9.png" data-toggle="modal"
+            data-target="#modalConfirmDelete9" />
+        </div>
+
+        <div class="memory-card card chummy-card  " data-framework="vue">
+          <img class="front-face myImg10 prizes" src="#" id ="upload10">
+          <img class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
+          <img class="back-face backface2010 chums-card" src="assets/finalstage/10.png" data-toggle="modal"
+            data-target="#modalConfirmDelete10" />
+        </div>
+
+      </div>
+    </div>
+
+    
+    <!-------hide for pop------------------------------------------->
+
+    <div class="container second-con">
+        <div class="memory-game">
+        
+  
+          <div class="stand">
+            <img src="assets/finalstage/stand.png" class="numbers" style="margin-left:63px;" />
+            <img src="assets/finalstage/stand.png" class="numbers" style=" margin-left: 230px;" />
+            <img src="assets/finalstage/stand.png" class="numbers" style="  margin-left: 394px;" />
+            <img src="assets/finalstage/stand.png" class="numbers" style="margin-left: 557px;" />
+  
+  
+          </div>
+          <div class="stand">
+            <img src="assets/finalstage/stand.png" class="numbers2" style="margin-left:60px;margin-top: 235px;" />
+            <img src="assets/finalstage/stand.png" class="numbers2" style=" margin-left: 226px;margin-top: 257px;" />
+            <img src="assets/finalstage/stand.png" class="numbers2" style=" margin-left: 392px;margin-top: 257px;" />
+            <img src="assets/finalstage/stand.png" class="numbers2" style="margin-left: 557px;margin-top: 235px;" />
+  
+  
+          </div>
+          <div class="stand">
+            <img src="assets/finalstage/stand.png" class="numbers3" style="margin-left:134px;margin-top: 332px;" />
+            <img src="assets/finalstage/stand.png" class="numbers3" style=" margin-left: 472px; margin-top: 332px;" />
+  
+          </div>
+  
+        
+  
+          <div class="memory-card card chummy-card" data-framework="aurelia" id="box1">
+            <img class="front-face prizes" src="" >
+            <img class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
+            <img class="back-face hidebackface201" src="assets/finalstage/1.png" alt="JS Badge"  />
+          </div>
+  
+          <div class="memory-card card chummy-card" data-framework="aurelia">
+            <img class="front-face  prizes" src="#"  />
+            <img class="front-face output_image2" src="assets/finalstage/empty_case.png" alt="your image">
+            <img class="back-face  hidebackface202" src="assets/finalstage/2.png" alt="JS Badge"  />
+          </div>
+  
+          <div class="memory-card card chummy-card " data-framework="vue">
+            <img class="front-face  prizes" src="#" >
+            <img class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
+            <img class="back-face hidebackface203 " src="assets/finalstage/3.png" alt="JS Badge"/>
+          </div>
+  
+          <div class="memory-card card chummy-card " data-framework="vue">
+            <img class="front-face prizes" src="#" >
+            <img class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
+            <img class="back-face hidebackface204" src="assets/finalstage/4.png"   />
+          </div>
+          <div class="memory-card card chummy-card" data-framework="vue">
+  
+            <img class="front-face myImg5 prizes" src="#">
+            <img class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
+            <img class="back-face hidebackface205 " src="assets/finalstage/5.png"  />
+          </div>
+  
+  
+          <div class="memory-card card chummy-card " data-framework="vue">
+            <img class="front-face  prizes" src="#" >
+            <img class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
+            <img class="back-face  hidebackface206 " src="assets/finalstage/6.png" />
+          </div>
+          <div class="memory-card card chummy-card" data-framework="vue">
+            <img class="front-face  prizes" src="#" >
+            <img class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
+            <img class="back-face hidebackface207 " src="assets/finalstage/7.png"  />
+          </div>
+          <div class="memory-card card chummy-card " data-framework="vue">
+            <img class="front-face  prizes" src="#" >
+            <img class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
+            <img class="back-face hidebackface208 " src="assets/finalstage/8.png"  />
+          </div>
+  
+          <div class="memory-card card chummy-card " data-framework="vue">
+            <img class="front-face  prizes" src="#" >
+            <img class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
+            <img class="back-face hidebackface209 chums-card" src="assets/finalstage/9.png"/>
+          </div>
+  
+          <div class="memory-card card chummy-card " data-framework="vue">
+            <img class="front-face  prizes" src="#" >
+            <img class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
+            <img class="back-face  hidebackface2010 chums-card" src="assets/finalstage/10.png" />
+          </div>
+  
+        </div>
+      </div>
+  
+
+
+       
+    <!-------chosen number set ------------------------------------------->
+
+    <div class="container chosen" >
+        <div class="memory-game" style = "width: 1PX;
+        height: 7px;
+        /* margin: auto; */
+        display: flex;
+        flex-wrap: wrap;
+        /* perspective: 1000px; */
+        margin-left: auto;
+        margin-right: 80px;
+    margin-top: -195px">
+        
+
+          <div class="memory-card card chummy-card " data-framework="aurelia" id="box1">
+            <img class="front-face myImg prizes chosen1" src="" id ="upload1">
+            <img class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
+            <img class="back-face chosen1 " src="assets/finalstage/1.png" alt="JS Badge" data-toggle="modal"
+              data-target="#modalConfirmDelete1"  />
+          </div>
+  
+          <div class="memory-card card chummy-card " data-framework="aurelia">
+            <img class="front-face myImg2 prizes chosen2" src="#" id ="upload2" />
+            <img class="front-face output_image2" src="assets/finalstage/empty_case.png" alt="your image">
+            <img class="back-face  chosen2" src="assets/finalstage/2.png" alt="JS Badge" data-toggle="modal"
+              data-target="#modalConfirmDelete2" />
+          </div>
+  
+          <div class="memory-card card chummy-card " data-framework="vue">
+            <img class="front-face myImg3 prizes chosen3" src="#" id ="upload3">
+            <img class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
+            <img class="back-face chosen3 " src="assets/finalstage/3.png" alt="JS Badge" data-toggle="modal"
+              data-target="#modalConfirmDelete3" />
+          </div>
+  
+          <div class="memory-card card chummy-card " data-framework="vue">
+            <img class="front-face myImg4 prizes chosen4" src="#" id ="upload4">
+            <img class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
+            <img class="back-face chosen4" src="assets/finalstage/4.png" data-toggle="modal" data-target="#modalConfirmDelete4" />
+          </div>
+  
+          <div class="memory-card card chummy-card " data-framework="vue">
+  
+            <img class="front-face myImg5 prizes chosen5" src="#" id ="upload5">
+            <img class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
+            <img class="back-face  chosen5" src="assets/finalstage/5.png" data-toggle="modal"
+              data-target="#modalConfirmDelete5" />
+          </div>
+  
+  
+          <div class="memory-card card chummy-card " data-framework="vue">
+            <img class="front-face myImg6 prizes chosen6" src="#" id ="upload6">
+            <img class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
+            <img class="back-face chosen6 " src="assets/finalstage/6.png" data-toggle="modal"
+              data-target="#modalConfirmDelete6" />
+          </div>
+          <div class="memory-card card chummy-card " data-framework="vue">
+            <img class="front-face myImg7 prizes chosen7" src="#" id ="upload7">
+            <img class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
+            <img class="back-face chosen7 " src="assets/finalstage/7.png" data-toggle="modal"
+              data-target="#modalConfirmDelete7" />
+          </div>
+          <div class="memory-card card chummy-card" data-framework="vue">
+            <img class="front-face myImg8 prizes chosen8" src="#" id ="upload8">
+            <img class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
+            <img class="back-face chosen8" src="assets/finalstage/8.png" data-toggle="modal"
+              data-target="#modalConfirmDelete8" />
+          </div>
+  
+          <div class="memory-card card chummy-card " data-framework="vue">
+            <img class="front-face myImg9 prizes chosen9" src="#" id ="upload9">
+            <img class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
+            <img class="back-face chosen9  chums-card" src="assets/finalstage/9.png" data-toggle="modal"
+              data-target="#modalConfirmDelete9" />
+          </div>
+  
+          <div class="memory-card card chummy-card  " data-framework="vue">
+            <img class="front-face myImg10 prizes chosen10" src="#" id ="upload10">
+            <img class="front-face output_image" src="assets/finalstage/empty_case.png" alt="your image">
+            <img class="back-face chosen10 chums-card" src="assets/finalstage/10.png" data-toggle="modal"
+              data-target="#modalConfirmDelete10" />
+          </div>
+  
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalConfirmDelete1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-notify modal-danger text-center" role="document">
+          <!--Content-->
+          <div class="text-center">
+            <img class="" src="assets/finalstage/empty_case.png" alt="your image"
+              style="width: 400px; margin-top: 113px;">
+              
+            <img class="pop_up popStyle" src="" id = "pop1">
+          </div>
+        </div>
+      </div>
+
+
+      <div class="modal fade" id="modalConfirmDelete2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-notify modal-danger text-center" role="document">
+          <!--Content-->
+          <div class="text-center">
+            <img class="" src="assets/finalstage/empty_case.png" alt="your image"
+              style="width: 400px; margin-top: 113px;">
+            <img class="pop_up2 popStyle" src="#" id = "pop2">
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalConfirmDelete3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-notify modal-danger text-center" role="document">
+          <!--Content-->
+          <div class="text-center">
+            <img class="" src="assets/finalstage/empty_case.png" alt="your image"
+              style="width: 400px; margin-top: 113px;">
+            <img class="pop_up3 popStyle" src="#" id = "pop3">
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalConfirmDelete4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-notify modal-danger text-center" role="document">
+          <!--Content-->
+          <div class="text-center">
+            <img class="" src="assets/finalstage/empty_case.png" alt="your image"
+              style="width: 400px; margin-top: 113px;">
+            <img class="pop_up4 popStyle" src="#" id = "pop4">
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalConfirmDelete5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-notify modal-danger text-center" role="document">
+          <!--Content-->
+          <div class="text-center">
+            <img class="" src="assets/finalstage/empty_case.png" alt="your image"
+              style="width: 400px; margin-top: 113px;">
+            <img class="pop_up5 popStyle" src="#" id = "pop5">
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalConfirmDelete6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-notify modal-danger text-center" role="document">
+          <!--Content-->
+          <div class="text-center">
+            <img class="" src="assets/finalstage/empty_case.png" alt="your image"
+              style="width: 400px; margin-top: 113px;">
+            <img class="pop_up6 popStyle" src="#" id = "pop6">
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modalConfirmDelete7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-notify modal-danger text-center" role="document">
+          <!--Content-->
+          <div class="text-center">
+            <img class="" src="assets/finalstage/empty_case.png" alt="your image"
+              style="width: 400px; margin-top: 113px;">
+            <img class="pop_up7 popStyle" src="#"  id = "pop7">
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalConfirmDelete8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-notify modal-danger text-center" role="document">
+          <!--Content-->
+          <div class="text-center">
+            <img class="" src="assets/finalstage/empty_case.png" alt="your image"
+              style="width: 400px; margin-top: 113px;">
+            <img class="pop_up8 popStyle" src="#" id = "pop8">
+          </div>
+        </div>
+      </div>
+
+      <div class="modal fade" id="modalConfirmDelete9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-notify modal-danger text-center" role="document">
+          <!--Content-->
+          <div class="text-center">
+            <img class="" src="assets/finalstage/empty_case.png" alt="your image"
+              style="width: 400px; margin-top: 113px;">
+            <img class="pop_up9 popStyle" src="#" id = "pop9">
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="modalConfirmDelete10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-sm modal-notify modal-danger text-center" role="document">
+          <!--Content-->
+          <div class="text-center">
+            <img class="" src="assets/finalstage/empty_case.png" alt="your image"
+              style="width: 400px; margin-top: 113px;">
+            <img class="pop_up10 popStyle" src="#" id = "pop10">
+          </div>
+        </div>
+      </div>
+
+      <div id="container">
+          <div id="item">
+    
+          </div>
+        </div>
+    
+      
+
+        <div class = "enter_offer">
+       <h4 style = "color:white">Enter Offer Here</h4>
+
+            <input type="text" id="myInput" class="form-control"  oninput="myFunction()" style = "width: 20%;">
+        
+        
+
+        </div>
+
+        <!-- Button trigger modal-->
+<button type="button" class="btn btn-danger" data-toggle="modal" data-target="#modalConfirmDelete" style = "position: relative;top: 124px;border-radius: 15px;">
+  Offer</button>
+
+<!--Modal: modalConfirmDelete-->
+<div class="modal fade" id="modalConfirmDelete" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-sm modal-notify modal-danger" role="document">
+    <!--Content-->
+    <div class="modal-content text-center 
+    " style = "    width: 482px;
+    height: 393px;
+    position: relative;
+    left: -86px;background-color:#CC0000;border-radius: 36px;">
+      <!--Header-->
+      <!-- <div class="modal-header d-flex justify-content-center">
+        <p class="heading">Bet</p>
+      
+      </div> -->
+
+      <!--Body-->
+      <div class="modal-body" >
+        <h1 id="demo"  class="demo" style = "  color: white;
+        font-size: 73px;"></h1>
+        <i class="animated rotateIn">  <img class="" src="assets/coins.png" style = "width:195px" class = "coins"></i>
+      </div>
+
+      <!--Footer-->
+      <div class="flex-center" > 
+      <a> <button class = "chumba_btn " data-dismiss="modal"> </button></a>
+      <a> <button class = "uwina_btn" data-dismiss="modal"> </button></a>
+      </div>
+    </div>
+    <!--/.Content-->
+  </div>
+</div>
+<!--Modal: modalConfirmDelete-->
+
+      <SCRIPT>
+      document.querySelector(".myImg").src = innerHTML=localStorage.getItem("uploadna")
+      document.querySelector(".chosen1").src = innerHTML=localStorage.getItem("uploadna")
+      document.getElementById("pop1").src = innerHTML=localStorage.getItem("uploadna")
+
+      document.querySelector(".myImg2").src = innerHTML=localStorage.getItem("uploadna2")
+      document.getElementById("pop2").src = innerHTML=localStorage.getItem("uploadna2")
+      document.querySelector(".chosen2").src = innerHTML=localStorage.getItem("uploadna2")
+
+      document.querySelector(".myImg3").src = innerHTML=localStorage.getItem("uploadna3")
+      document.getElementById("pop3").src = innerHTML=localStorage.getItem("uploadna3")
+      document.querySelector(".chosen3").src = innerHTML=localStorage.getItem("uploadna3")
+
+      document.querySelector(".myImg4").src = innerHTML=localStorage.getItem("uploadna4")
+      document.getElementById("pop4").src = innerHTML=localStorage.getItem("uploadna4")
+      document.querySelector(".chosen4").src = innerHTML=localStorage.getItem("uploadna4")
+      
+
+      document.querySelector(".myImg5").src = innerHTML=localStorage.getItem("uploadna5")
+      document.getElementById("pop5").src = innerHTML=localStorage.getItem("uploadna5")
+      document.querySelector(".chosen5").src = innerHTML=localStorage.getItem("uploadna5")
+    
+
+      document.querySelector(".myImg6").src = innerHTML=localStorage.getItem("uploadna6")
+      document.getElementById("pop6").src = innerHTML=localStorage.getItem("uploadna6")
+      document.querySelector(".chosen6").src = innerHTML=localStorage.getItem("uploadna6")
+
+      document.querySelector(".myImg7").src = innerHTML=localStorage.getItem("uploadna7")
+      document.getElementById("pop7").src = innerHTML=localStorage.getItem("uploadna7")
+      document.querySelector(".chosen7").src = innerHTML=localStorage.getItem("uploadna7")
+
+      document.querySelector(".myImg8").src = innerHTML=localStorage.getItem("uploadna8")
+      document.getElementById("pop8").src = innerHTML=localStorage.getItem("uploadna8")
+      document.querySelector(".chosen8").src = innerHTML=localStorage.getItem("uploadna8")
+
+      document.querySelector(".myImg9").src = innerHTML=localStorage.getItem("uploadna9")
+      document.getElementById("pop9").src = innerHTML=localStorage.getItem("uploadna9")
+      document.querySelector(".chosen9").src = innerHTML=localStorage.getItem("uploadna9")
+
+      document.querySelector(".myImg10").src = innerHTML=localStorage.getItem("uploadna10")
+      document.getElementById("pop10").src = innerHTML=localStorage.getItem("uploadna10")
+      document.querySelector(".chosen10").src = innerHTML=localStorage.getItem("uploadna10")
+     
+     
+      function myFunction() {
+  var x = document.getElementById("myInput").value;
+  document.getElementById("demo").innerHTML = x;
+}
+     
+var x = document.getElementById("myAudio"); 
+
+function playAudio() { 
+  x.play(); 
+} 
+
+function pauseAudio() { 
+  x.pause(); 
+}
+
+     </SCRIPT>
+
+
+      <script src="finalround.js"></script>
+
+
+      <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+      <!-- Bootstrap tooltips -->
+      <script type="text/javascript" src="js/popper.min.js"></script>
+      <!-- Bootstrap core JavaScript -->
+      <script type="text/javascript" src="js/bootstrap.min.js"></script>
+      <!-- MDB core JavaScript -->
+      <script type="text/javascript" src="js/mdb.min.js"></script>
+
+</body>
+
+</html>
