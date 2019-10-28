@@ -10,18 +10,22 @@
 }
 
 
+ 
 body {
   height: 100vh;
   display: flex;
   background-image: url("assets/background.png");
   background-size:cover;
+
+  background-repeat: no-repeat;
+    background-color: #480707;
   
 }
 
 
 .memory-game {
   width: 62%;
-  height: 486px;
+  height: 611px;
   /* margin: auto; */
   display: flex;
   flex-wrap: wrap;
@@ -127,48 +131,60 @@ background: red;
 
 .numbers{
   position: absolute;
-  margin-top: 61px;
-  z-index: 5;
-  width: 32px;
+    margin-top: 125px;
+    z-index: 5;
+    width: 111px;
+    height: 22px;
+    font-weight: bold;
 }
 
 .numbers2{
+ 
+  margin-top: 230px;
   position: absolute;
-  margin-top: 144px;
-  z-index: 5;
-  width: 32px;
+  
+    z-index: 5;
+    width: 111px;
+    height: 22px;
+    font-weight: bold;
 
 }
 
 .numbers3{
   position: absolute;
-  margin-top: 223px;
+  margin-top: 332px;
   z-index: 5;
-  width: 36px;
+  width: 111px;
+  height: 22px;
+  font-weight: bold;
 
 }
 
 .numbers4{
   position: absolute;
-  margin-top: 304px;
+  margin-top: 431px;
   z-index: 5;
-  width: 36px;
+  width: 111px;
+  height: 22px;
+  font-weight: bold;
 
 }
 .numbers5{
-    position: absolute;
-    margin-top: 385px;
-    z-index: 5;
-    width: 36px;
-
+  position: absolute;
+  margin-top: 534px;
+  z-index: 5;
+  width: 111px;
+  height: 22px;
+  font-weight: bold;
 }
 
 .numbers6{
   position: absolute;
-  margin-top: 465px;
+  margin-top: 638px;
   z-index: 5;
-  width: 36px;
-
+  width: 111px;
+  height: 22px;
+  font-weight: bold;
 }
 
 
@@ -195,6 +211,16 @@ background: red;
 
 .nav li img{
   width: 28px;
+}
+
+.show_list img{
+  /* margin-top: -210px;
+  width: 109px;
+  height: 69px; */
+
+  margin-top: -210px;
+    width: 136px;
+    height: 107px;
 }
 
 @media (min-width: 1920px) { 

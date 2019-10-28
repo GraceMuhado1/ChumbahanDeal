@@ -9,6 +9,10 @@
       display: block;
   }
   
+  .enter_offer{
+    position: relative;
+    top: 800px;
+  }
   
   body {
     height: 100vh;
@@ -19,6 +23,10 @@
     background-repeat: no-repeat;
     background-color: #480707;
     
+  }
+
+  .chosen_num{
+    position:relative
   }
   
 
@@ -176,16 +184,24 @@
     margin: 5px;
   }
 
-  .pop_up{
-    position: absolute;
+  .popStyle{
+    /* position: absolute;
     top: 203px;
     left: 92px;
-    width: 221px;
+    width: 221px; */
   }
 
   .prizes{
     z-index: 3;width: 101px;margin: 0px 20px;
   }
+  input[type="file"] {
+    display: none;
+}
+.uploadFinished{
+  position: absolute;
+  top: 11px;
+  color: white;
+}
   @media (min-width: 1920px) {
 
     .memory-game{

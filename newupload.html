@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<style>
+body{
+  background-color: #3F729B;
+}
+
+@media (max-width: 600px) {
+  body {
+    width: auto !important;
+  }
+  table {
+    width: auto !important;
+  }
+  .column-last {
+    border-top: 1px solid #DEDEDE;
+  }
+}
+
+
+/** Two column system
+     * @See https://julie.io/email-layout-calculator/
+     * I used different padding values from those generated, but the method holds true.
+     */
+
+    /* Level Two: reset mobile gmail first gutters */
+    td.column-first {
+      padding-left:  35px !important;
+      padding-right: 17.5px !important;
+    }
+
+    td.column-last {
+      padding-left:  17.5px !important;
+      padding-right: 35px !important;
+    }
+
+    /* Level Three: use mobile gutter */
+    @media screen and (max-width: 599px) {
+      .column {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
+      .column > tbody > tr > td {
+        padding-left:  20px !important;
+        padding-right: 20px !important;
+      }
+    }
+
+
+  
+input[type=button], input[type=submit], input[type=reset] {
+  background-image: linear-gradient(to right, #FF512F 0%, #F09819 51%, #FF512F 100%);
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+</style>
+<body >
+
+    
+  <!-- Level One CSS (inlined): the mobile gmail first (but still works in Outlook) markup -->
+  <table width="600" border="0" cellpadding="0" cellspacing="0" align="center" id="container">
+      <tr>
+        <td>
+
+            <h2 class="card-title text-info">Phase1</h2>
+            <h5 class="card-title" style="color:white">Enter number of player of the day.</h5>
+             <form action = "phase1.html" target = "blank">
+                <input type = "text" id = "txt"/>
+                <input type = "submit" value = "submit" onclick = "passvalue()" class ="btn peach-gradient"/>
+                </form> 
+        
+                <form method='post' action='finalround.html' target = "blank" >
+               
+                
+        
+                    <h2 class="card-title text-info">Phase2</h2>
+                  <!-- <h1>Image Uploader Preview</h1> -->
+                  <table style="width:100%">
+                    <tbody>
+                      <tr>
+                        <td>
+                            <img src = "assets/numbers/1.png">
+                          <img id="uploadPreview1" src="http://i111.photobucket.com/albums/n153/terrapins_sky/plantonic/no_image_zpsa9af9c43.gif" width="175"><br>
+                          <div class="inp_field_12" onmousemove="file_ho(event,this,1)" style ="margin-left: 57px;">
+                        <input id="uploadImage1" value="" name="p1" onchange="file_ch(1);PreviewImage(1);" type="file">
+                </div>
+                <div id="result_1" class="result"></div>
+               
+                        </td>
+                   
+                    
+                        <td >
+                            <img src = "assets/numbers/2.png">
+                          <img id="uploadPreview2" src="http://i111.photobucket.com/albums/n153/terrapins_sky/plantonic/no_image_zpsa9af9c43.gif" width="175"><br>
+                          <div class="inp_field_12" onmousemove="file_ho(event,this,2)" style ="margin-left: 57px;">
+                        <input id="uploadImage2" value="" name="p2" onchange="file_ch(2);PreviewImage(2);" type="file">
+                </div>
+                <div id="result_2" class="result"></div>
+                        </td>
+                     </tr>
+        <tr>
+                        <td >
+                            <img src = "assets/numbers/3.png">
+                                <img id="uploadPreview3" src="http://i111.photobucket.com/albums/n153/terrapins_sky/plantonic/no_image_zpsa9af9c43.gif" width="175"><br>
+                                <div class="inp_field_12" onmousemove="file_ho(event,this,3)" style ="margin-left: 57px;">
+                              <input id="uploadImage3" value="" name="p3" onchange="file_ch(3);PreviewImage(3);" type="file">
+                      </div>
+                      <div id="result_3" class="result"></div>
+                              </td>
+        
+                             
+        
+                                <td>
+                                    <img src = "assets/numbers/4.png">
+                                    <img id="uploadPreview4" src="http://i111.photobucket.com/albums/n153/terrapins_sky/plantonic/no_image_zpsa9af9c43.gif" width="175"><br>
+                                    <div class="inp_field_12" onmousemove="file_ho(event,this,4)" style ="margin-left: 57px;">
+                                  <input id="uploadImage4" value="" name="p3" onchange="file_ch(4);PreviewImage(4);" type="file">
+                          </div>
+                          <div id="result_4" class="result"></div>
+                                  </td>
+        </tr>
+        <tr>
+                                  <td>
+                                      <img src = "assets/numbers/5.png">
+                                      <img id="uploadPreview5" src="http://i111.photobucket.com/albums/n153/terrapins_sky/plantonic/no_image_zpsa9af9c43.gif" width="175"><br>
+                                      <div class="inp_field_12" onmousemove="file_ho(event,this,5)" style ="margin-left: 57px;">
+                                    <input id="uploadImage5" value="" name="p3" onchange="file_ch(5);PreviewImage(5);" type="file">
+                            </div>
+                            <div id="result_5" class="result"></div>
+                                    </td>
+        
+                                    <td>
+                                        <img src = "assets/numbers/6.png">
+                                        <img id="uploadPreview6" src="http://i111.photobucket.com/albums/n153/terrapins_sky/plantonic/no_image_zpsa9af9c43.gif" width="175"><br>
+                                        <div class="inp_field_12" onmousemove="file_ho(event,this,6)" style ="margin-left: 57px;">
+                                      <input id="uploadImage6" value="" name="p3" onchange="file_ch(6);PreviewImage(6);" type="file">
+                              </div>
+                              <div id="result_6" class="result"></div>
+                                      </td>
+        </tr>
+        
+        <tr>
+                                      <td>
+                                          <img src = "assets/numbers/7.png">
+                                          <img id="uploadPreview7" src="http://i111.photobucket.com/albums/n153/terrapins_sky/plantonic/no_image_zpsa9af9c43.gif" width="175"><br>
+                                          <div class="inp_field_12" onmousemove="file_ho(event,this,7)" style ="margin-left: 57px;">
+                                        <input id="uploadImage7" value="" name="p3" onchange="file_ch(7);PreviewImage(7);" type="file">
+                                </div>
+                                <div id="result_7" class="result"></div>
+                                        </td>
+        
+                                        <td>
+                                            <img src = "assets/numbers/8.png">
+                                            <img id="uploadPreview8" src="http://i111.photobucket.com/albums/n153/terrapins_sky/plantonic/no_image_zpsa9af9c43.gif" width="175"><br>
+                                            <div class="inp_field_12" onmousemove="file_ho(event,this,8)" style ="margin-left: 57px;">
+                                          <input id="uploadImage8" value="" name="p3" onchange="file_ch(8);PreviewImage(8);" type="file">
+                                  </div>
+                                  <div id="result_8" class="result"></div>
+                                          </td>
+        </tr>
+                                          <td>
+                                              <img src = "assets/numbers/9.png">
+                                              <img id="uploadPreview9" src="http://i111.photobucket.com/albums/n153/terrapins_sky/plantonic/no_image_zpsa9af9c43.gif" width="175"><br>
+                                              <div class="inp_field_12" onmousemove="file_ho(event,this,9)" style ="margin-left: 57px;">
+                                            <input id="uploadImage9" value="" name="p3" onchange="file_ch(9);PreviewImage(9);" type="file">
+                                    </div>
+                                    <div id="result_9" class="result"></div>
+                                            </td>
+        
+                                            <td>
+                                                <img src = "assets/numbers/10.png">
+                                                <img id="uploadPreview10" src="http://i111.photobucket.com/albums/n153/terrapins_sky/plantonic/no_image_zpsa9af9c43.gif" width="175"><br>
+                                                <div class="inp_field_12" onmousemove="file_ho(event,this,10)" style ="margin-left: 57px;">
+                                              <input id="uploadImage10" value="" name="p3" onchange="file_ch(10);PreviewImage(10);" type="file">
+                                      </div>
+                                      <div id="result_10" class="result"></div>
+                                              </td>
+                   
+                    </tbody>
+                  </table>
+               
+             
+                <input type = "submit" value = "submit" onclick = "passhtml()"  class="buttonpass"/> 
+                </form>
+        
+  
+        </td>
+      </tr>
+    </table><!--/#container-->
+  
+
+
+
+    <script>
+function passvalue(){
+var firstname = document.getElementById("txt").value;
+
+
+localStorage.setItem("textvalue" , firstname);
+
+return false;
+
+  }
+
+
+    function file_ho(e, o, a) {
+    e = window.event || e;
+    var x = 0,
+        y = 0;
+    if (o.offsetParent) {
+        do {
+            x += o.offsetLeft;
+            y += o.offsetTop;
+        } while (o = o.offsetParent);
+    }
+    var x1 = e.clientX || window.event.clientX;
+    var y1 = e.clientY || window.event.clientY;
+    var le = 30 - (x1 - x);
+    var to = 20 - (y1 - y);
+    getObj('uploadImage' + a).style.marginRight = le + 'px';
+    getObj('uploadImage' + a).style.marginTop = -to + 'px';
+}
+
+function file_ch(x) {
+    var val = getObj('uploadImage' + x).value;
+    getObj('result_' + x).innerHTML = val;
+}
+
+function getObj(x) {
+    return document.getElementById(x);
+}
+function PreviewImage(no) {
+            var oFReader = new FileReader();
+            oFReader.readAsDataURL(document.getElementById("uploadImage"+no).files[0]);
+            oFReader.onload = function (oFREvent) {
+                document.getElementById("uploadPreview"+no).src = oFREvent.target.result;
+            };
+        };
+
+
+
+
+        function passhtml(){
+var upload1 = document.getElementById("uploadPreview1").src;
+localStorage.setItem("uploadna" , upload1);
+
+
+var upload2 = document.getElementById("uploadPreview2").src;
+localStorage.setItem("uploadna2" , upload2);
+
+var upload3 = document.getElementById("uploadPreview3").src;
+localStorage.setItem("uploadna3" , upload3);
+
+var upload4 = document.getElementById("uploadPreview4").src;
+localStorage.setItem("uploadna4" , upload4);
+
+
+var upload5 = document.getElementById("uploadPreview5").src;
+localStorage.setItem("uploadna5" , upload5);
+
+var upload6 = document.getElementById("uploadPreview6").src;
+localStorage.setItem("uploadna6" , upload6);
+
+
+var upload7 = document.getElementById("uploadPreview7").src;
+localStorage.setItem("uploadna7" , upload7);
+
+var upload8 = document.getElementById("uploadPreview8").src;
+localStorage.setItem("uploadna8" , upload8);
+
+
+var upload9 = document.getElementById("uploadPreview9").src;
+localStorage.setItem("uploadna9" , upload9);
+
+var upload10 = document.getElementById("uploadPreview10").src;
+localStorage.setItem("uploadna10" , upload10);
+
+}
+    </script>
+
+</body>
+</html>

@@ -18,9 +18,7 @@ function flipCard() {
     return;
   }
 
-  // second click
-  secondCard = this;
-  checkForMatch();
+
 }
 
 
@@ -42,28 +40,89 @@ function unflipCards() {
   }, 1500);
 }
 
-function resetBoard() {
-  [hasFlippedCard, lockBoard] = [false, false];
-  [firstCard, secondCard] = [null, null];
+
+
+
+$("#insert_confirm").hide();
+
+
+   document.querySelector(".playerNumber").innerHTML=localStorage.getItem("textvalue");
+  
+
+function getInputValue() {
+
+
+  let names = ["assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif",
+    "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif",
+    "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif",
+    "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif",
+    "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif",
+    "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif",];
+
+
+  let popThis = ["assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif",
+    "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif",
+    "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif",
+    "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif",
+    "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif",
+    "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif", "assets/sorry_animation.gif",];
+
+    // document.querySelector(".playerNumber").innerHTML=localStorage.getItem("textvalue");
+  let cells = document.querySelectorAll('.show_list')
+  let popCon = document.querySelectorAll('.content_pop')
+
+  Array.prototype.insert = function (index, item) {
+    this.splice(index, 0, item);
+  };
+
+  var inputVal = document.querySelector(".playerNumber").innerHTML=localStorage.getItem("textvalue");;
+  names.insert(inputVal - 1, 'assets/cases/player_day.png');
+  popThis.insert(inputVal - 1, 'assets/player-of-the-day.gif');
+
+  console.log(names);
+
+
+  for (i = 0; i < cells.length; i++) {
+
+    cells[i].innerHTML += '<img src="' + names[i] + '" />';
+
+    $("#insert_confirm").show();
+
+  } 
+
+  for (a = 0; a < popCon.length; a++) {
+    popCon[a].innerHTML += '<img src="' + popThis[a] + '"  style = "width: 701px;margin-left:-126px;" />';
+
+  }
+
 }
 
-(function shuffle() {
-  cards.forEach(card => {
-    let randomPos = Math.floor(Math.random() * 30);
-    card.style.order = randomPos;
-    console.log(card)
+$(window).load(function(){        
+  $('#myModal').modal('show');
+   }); 
 
 
-    if ($("#aurelia").click(function () {
+// (function shuffle() {
+//   cards.forEach(card => {
+//     let randomPos = Math.floor(Math.random() * 30);
+//     card.style.order = randomPos;
+//     console.log(card)
 
-      console.log(style.order)
 
-    }));
+//     if ($("#aurelia").click(function () {
+
+//       console.log(style.order)
+
+//     }));
 
 
-  });
+//   });
 
-})();
+// })();
+
+
+
+
 
 cards.forEach(card => card.addEventListener('click', flipCard));
 $(document).ready(function () {
@@ -80,4 +139,3 @@ $(document).ready(function () {
 
 
 
- 

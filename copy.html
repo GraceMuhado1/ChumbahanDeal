@@ -1,0 +1,21 @@
+<html>
+<body>
+<body>
+<div id="div1">
+    <p id = "hello">Hello world</p>
+</div>
+<button onclick="add()">Copy</button>
+<div id="div2"><p>div1 Placeholder</p></div>
+<div id="div3"><p>div2 Placeholder</p></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+var n = 2;
+function add(){
+$('#div'+n).html($('#div1').html());
+$('#div1').html("<p>New Value</p>");
+n++;
+}
+</script>
+</body>
+</html>
